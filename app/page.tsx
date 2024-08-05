@@ -1,7 +1,7 @@
+'use client'
 import BlurFade from "@/components/magicui/blur-fade";
 import Marquee from "@/components/magicui/marquee";
 import ProjectCard from "@/components/ProjectCard";
-import { PinContainer } from "@/components/ui/3d-pin";
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 
