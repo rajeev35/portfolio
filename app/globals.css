@@ -10,6 +10,16 @@ body, * {
   letter-spacing: -0.06em;
 }
 
+::-moz-selection {
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
