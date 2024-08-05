@@ -284,7 +284,7 @@ export default function Home() {
         </BlurFade>
         <BlurFade delay={1.75}>
           <h1 className="text-center pb-10 text-gray-400">
-            here are a few projects i've worked on
+            here are a few projects i&apos;ve worked on
           </h1>
         </BlurFade>
         <div className=" grid md:grid-cols-2 grid-cols-1 mr-auto ml-auto gap-4">
@@ -322,7 +322,7 @@ export default function Home() {
               githubLink="https://github.com/madebyshaurya/FizzixApp"
               video="https://youtu.be/xjSNIMTSfcA?si=H034mcxzXIqr2pvT"
               title="Fizzix"
-              description="fizzix helps you learn the 3 laws of motion by isaac newton in an interactive way. this was also the swift student challenge '24 winner."
+              description="fizzix helps you learn the 3 laws of motion by isaac newton in an interactive way. this was also the swift student challenge &apos;24 winner."
             />
           </BlurFade>
         </div>
