@@ -1,11 +1,52 @@
-'use client'
+"use client";
 import BlurFade from "@/components/magicui/blur-fade";
 import Marquee from "@/components/magicui/marquee";
 import ProjectCard from "@/components/ProjectCard";
-import { ArrowUp } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { ArrowRight, ArrowUp } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+
+    const handleMouseEnter = (index: any) => setHoveredIndex(index);
+    const handleMouseLeave = () => setHoveredIndex(null);
+
+    const social = [
+      {
+        link: "https://x.com/madebyshaurya",
+        image: "/x.svg",
+      },
+      {
+        link: "https://github.com/madebyshaurya",
+        image: "/gh.png",
+      },
+      {
+        link: "mailto:shaurya50211@gmail.com",
+        image: "/mail.svg",
+        handle: "shaurya50211@gmail.com"
+      },
+    ];
+  const achievements = [
+    {
+      image:
+        "https://pbs.twimg.com/media/GJ8BDl-XIAEe9kN?format=jpg&name=4096x4096",
+      title: "Swift Student Challenge",
+      year: "2024",
+      direction: "left",
+      redirect: "https://x.com/madebyshaurya/status/1774138013188038818",
+    },
+    {
+      image:
+        "https://pbs.twimg.com/media/GQ-zEh0bwAUhgZu?format=jpg&name=4096x4096",
+      title: "Buildspace Grant",
+      year: "2024",
+      direction: "center",
+      redirect: "https://x.com/madebyshaurya/status/1820637038904848552",
+    },
+  ];
   return (
     <div className="md:px-[20vw] px-10 pb-10">
       <div className="mt-10 ml-auto justify-between mr-auto flex gap-10 items-center">
@@ -101,7 +142,7 @@ export default function Home() {
         </BlurFade>
       </div>
 
-      <BlurFade delay={1.25}>
+      <BlurFade delay={1.25} className="pt-10">
         <Marquee className="[--duration:20s]">
           <svg
             width="100px"
@@ -322,9 +363,112 @@ export default function Home() {
               githubLink="https://github.com/madebyshaurya/FizzixApp"
               video="https://youtu.be/xjSNIMTSfcA?si=H034mcxzXIqr2pvT"
               title="Fizzix"
-              description="fizzix helps you learn the 3 laws of motion by isaac newton in an interactive way. this was also the swift student challenge &apos;24 winner."
+              description="fizzix helps you learn the 3 laws of motion by isaac newton in an interactive way. this was also the swift student challenge '24 winner."
             />
           </BlurFade>
+        </div>
+      </div>
+
+      <div className="pt-10">
+        <BlurFade delay={0.5} inView>
+          <h1 className="text-center text-2xl md:text-4xl">achievements</h1>
+        </BlurFade>
+        <BlurFade delay={0.75} inView>
+          <h1 className="text-center pb-10 text-gray-400">
+            these are some hackathons/contests that i won/got selected.
+          </h1>
+        </BlurFade>
+
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+          {achievements.map((e, index) => (
+            <BlurFade key={index} delay={1 + index * 0.3} inView>
+              <Link href={e.redirect} target="_blank">
+                <div className=" group/card group">
+                  <div
+                    className={cn(
+                      "cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4",
+                      "backgroundImage"
+                    )}
+                    style={{
+                      backgroundImage: `url(${e.image})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: e.direction,
+                    }}
+                  >
+                    <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
+                    <div className="flex flex-row items-center space-x-4 z-10 justify-end">
+                      <ArrowUp
+                        color="#fff"
+                        className=" group-hover:rotate-0 rotate-45 transition-all"
+                      />
+                    </div>
+                    <div className="text content">
+                      <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
+                        {e.title}
+                      </h1>
+                      <p className="font-normal text-sm font-mono text-gray-50 relative z-10 my-4">
+                        2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </BlurFade>
+          ))}
+        </div>
+      </div>
+
+      <div className="pt-10">
+        <BlurFade delay={0.5} inView>
+          <h1 className="text-center text-2xl md:text-4xl">contact</h1>
+        </BlurFade>
+        <BlurFade delay={0.75} inView>
+          <h1 className="text-center pb-10 text-gray-400">
+            fastest way to reach me is email or x (twitter) dm
+          </h1>
+        </BlurFade>
+
+        <div className="flex gap-2">
+          {social.map((e, index) => (
+            <Link href={e.link} target="_blank" key={index}>
+              <BlurFade delay={1 + index * 0.3} inView>
+                <span
+                  className="flex items-center w-[240px] p-2 justify-evenly rounded-md transition-all border-black border group relative overflow-hidden"
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div
+                    className={`flex items-center justify-center transition-transform duration-300 ${
+                      hoveredIndex === index
+                        ? "translate-x-[-100%] opacity-0"
+                        : ""
+                    }`}
+                  >
+                    <Image alt="social" src={e.image} height={30} width={26} />
+                  </div>
+                  <div
+                    className={`absolute flex items-center justify-center transition-transform duration-300 ${
+                      hoveredIndex === index
+                        ? "opacity-100 translate-x-[30%]"
+                        : "opacity-0 translate-x-0"
+                    }`}
+                  >
+                    <ArrowRight className="text-4xl" />
+                  </div>
+                  <h1
+                    className={`text-base transition-transform duration-300 ${
+                      hoveredIndex === index
+                        ? "translate-x-[100%] opacity-0"
+                        : "translate-x-0 opacity-100"
+                    }`}
+                  >
+                    {" "}
+                    {e.handle ? e.handle : "@madebyshaurya"}{" "}
+                  </h1>
+                </span>
+              </BlurFade>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
