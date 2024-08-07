@@ -418,7 +418,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-10">
+      <div className="pt-10 mx-auto max-w-4xl text-center">
         <BlurFade delay={0.5} inView>
           <h1 className="text-center text-2xl md:text-4xl">contact</h1>
         </BlurFade>
@@ -428,7 +428,7 @@ export default function Home() {
           </h1>
         </BlurFade>
 
-        <div className="flex gap-2">
+        <div className="flex flex-col md:flex-row gap-2 justify-center items-center">
           {social.map((e, index) => (
             <Link href={e.link} target="_blank" key={index}>
               <BlurFade delay={1 + index * 0.3} inView>
@@ -462,8 +462,7 @@ export default function Home() {
                         : "translate-x-0 opacity-100"
                     }`}
                   >
-                    {" "}
-                    {e.handle ? e.handle : "@madebyshaurya"}{" "}
+                    {e.handle ? e.handle : "@madebyshaurya"}
                   </h1>
                 </span>
               </BlurFade>
