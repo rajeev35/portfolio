@@ -48,7 +48,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="md:px-[20vw] px-10 pb-10">
+    <div className="md:px-[20vw] px-10 pb-4">
       <div className="mt-10 ml-auto justify-between mr-auto flex gap-10 items-center">
         <div>
           <BlurFade delay={0.25}>
@@ -470,6 +470,22 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <h1 className="text-center pt-20 text-gray-400">
+        If you&apos;re interested in the code,{" "}
+        <a
+          href="https://github.com/madebyshaurya/Portfolio"
+          className="underline transition-all hover:text-blue-500 group"
+          target="_blank"
+        >
+          here it is
+          <ArrowUp
+            className="rotate-45 opacity-0 group-hover:opacity-100 w-0 group-hover:w-fit inline transition-all"
+            color="#3b82f6"
+            width={20}
+          />
+        </a>{" "}
+      </h1>
     </div>
   );
 }
