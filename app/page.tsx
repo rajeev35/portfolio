@@ -9,26 +9,26 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-    const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-    const handleMouseEnter = (index: any) => setHoveredIndex(index);
-    const handleMouseLeave = () => setHoveredIndex(null);
+  const handleMouseEnter = (index: any) => setHoveredIndex(index);
+  const handleMouseLeave = () => setHoveredIndex(null);
 
-    const social = [
-      {
-        link: "https://x.com/madebyshaurya",
-        image: "/x.svg",
-      },
-      {
-        link: "https://github.com/madebyshaurya",
-        image: "/gh.png",
-      },
-      {
-        link: "mailto:shaurya50211@gmail.com",
-        image: "/mail.svg",
-        handle: "shaurya50211@gmail.com"
-      },
-    ];
+  const social = [
+    {
+      link: "https://x.com/madebyshaurya",
+      image: "/x.svg",
+    },
+    {
+      link: "https://github.com/madebyshaurya",
+      image: "/gh.png",
+    },
+    {
+      link: "mailto:shaurya50211@gmail.com",
+      image: "/mail.svg",
+      handle: "shaurya50211@gmail.com",
+    },
+  ];
   const achievements = [
     {
       image:
@@ -143,6 +143,7 @@ export default function Home() {
       </div>
 
       <BlurFade delay={1.25} className="pt-10">
+        {/* Bunch of icons */}
         <Marquee className="[--duration:20s]">
           <svg
             width="100px"
@@ -387,7 +388,7 @@ export default function Home() {
                   <div
                     className={cn(
                       "cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4",
-                      "backgroundImage"
+                      "backgroundImage",
                     )}
                     style={{
                       backgroundImage: `url(${e.image})`,
