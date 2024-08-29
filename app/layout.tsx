@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import "./globals.css";
 import Head from "next/head";
+
+export const metadata: Metadata = {
+  title: "Shaurya Gupta",
+  description: "A 13-year-old Swift developer, web developer, and middle school student. Winner of the 2024 Swift Student Challenge. Passionate about coding, learning, and building projects.",
+};
 
 export default function RootLayout({
   children,
@@ -9,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>Shaurya Gupta - Swift  | Web Dev 🕸️ | Student 📚</title>
         <meta
           name="description"
           content="Shaurya Gupta, a 13-year-old Swift developer, web developer, and middle school student. Winner of the 2024 Swift Student Challenge. Passionate about coding, learning, and building impactful projects."
