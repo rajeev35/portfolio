@@ -32,7 +32,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
           className="object-cover"
           src={imageSrc}
           alt={title}
-          layout="fill"
+          width={500}
+          height={500}
+          // layout="fill"
         />
       </div>
       <div className="px-6 py-4 flex-grow overflow-auto">
