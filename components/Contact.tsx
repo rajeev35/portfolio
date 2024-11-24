@@ -40,7 +40,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-10 mx-auto max-w-4xl text-center">
+    <div className="pt-14 mx-auto max-w-4xl text-center">
       <BlurFade delay={0.5} inView>
         <h1 className="text-center text-2xl md:text-4xl">contact</h1>
       </BlurFade>

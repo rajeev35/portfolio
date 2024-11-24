@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body, * {
+body,
+* {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.03em;
 }
 
 ::-moz-selection {
-  color: red;
-  background: yellow;
+  color: white;
+  background: black;
 }
 
 ::selection {

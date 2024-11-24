@@ -1,6 +1,6 @@
-import React from 'react'
-import BlurFade from './magicui/blur-fade';
-import { ArrowUp } from 'lucide-react';
+import React from "react";
+import BlurFade from "./magicui/blur-fade";
+import { ArrowUp } from "lucide-react";
 
 const Description = () => {
   return (
@@ -15,13 +15,13 @@ const Description = () => {
           development, so I self-learned{" "}
           <a
             href="https://www.swift.org/"
-            className="underline transition-all hover:text-blue-500 group"
+            className="underline transition-all hover:text-[#005BE7] group"
             target="_blank"
           >
             Swift
             <ArrowUp
               className="rotate-45 opacity-0 group-hover:opacity-100 w-0 group-hover:w-fit inline transition-all"
-              color="#3b82f6"
+              color="#005BE7"
               width={20}
             />
           </a>{" "}
@@ -54,13 +54,13 @@ const Description = () => {
               width={20}
             />
           </a>{" "}
-          in person. It was a very unique experience in Cupertino, meeting many
+          in-person. It was a very unique experience in Cupertino, meeting many
           new people. Right now, I am continuing to build more projects and
           learn new skills such as Next.js and Python.
         </p>
       </BlurFade>
     </div>
   );
-}
+};
 
-export default Description
+export default Description;
