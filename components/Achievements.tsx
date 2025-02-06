@@ -1,10 +1,7 @@
-
-
 import BlurFade from "@/components/magicui/blur-fade";
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { cn } from "@/lib/utils";
-
 const achievements = [
   {
     image:

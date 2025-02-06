@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div className="">
+    <div className="mt-10">
       <BlurFade delay={1.5}>
         <h1 className="text-center text-2xl md:text-4xl">projects</h1>
       </BlurFade>

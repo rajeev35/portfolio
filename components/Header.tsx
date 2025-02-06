@@ -2,25 +2,6 @@ import BlurFade from "@/components/magicui/blur-fade";
 import Image from "next/image";
 
 export default function Header() {
-  const calculateAge = () => {
-    const birthDate = new Date(2011, 1, 5); // February 5, 2011 (month is 0-indexed)
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-
-    // Adjust if the current date is before the birth date this year
-    const hasHadBirthdayThisYear =
-      today.getMonth() > birthDate.getMonth() ||
-      (today.getMonth() === birthDate.getMonth() &&
-        today.getDate() >= birthDate.getDate());
-    if (!hasHadBirthdayThisYear) {
-      age--;
-    }
-
-    return age;
-  };
-
-  const age = calculateAge();
-
   return (
     <div className="mt-10 ml-auto justify-between mr-auto flex gap-10 items-center">
       <div>
@@ -31,7 +12,7 @@ export default function Header() {
         </BlurFade>
         <BlurFade delay={0.5}>
           <h1 className="text-left md:text-3xl text-md text-gray-400">
-            a {age} y/o programmer who likes to build things.
+            a 14 y/o programmer who likes to build things.
           </h1>
         </BlurFade>
       </div>
