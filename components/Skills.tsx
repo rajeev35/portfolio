@@ -1,3 +1,5 @@
+"use client";
+
 import BlurFade from "@/components/magicui/blur-fade";
 import Marquee from "@/components/magicui/marquee";
 

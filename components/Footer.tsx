@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { ArrowUp } from "lucide-react"
+import Link from "next/link";
+import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -18,5 +18,5 @@ export default function Footer() {
         />
       </Link>{" "}
     </h1>
-  )
+  );
 }
