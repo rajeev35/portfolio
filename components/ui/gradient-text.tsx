@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { motion, MotionProps } from "motion/react";
 
@@ -23,7 +23,7 @@ function GradientText({
     <MotionComponent
       className={cn(
         "relative inline-flex overflow-hidden bg-white dark:bg-black",
-        className,
+        className
       )}
       {...props}
     >
@@ -38,5 +38,6 @@ function GradientText({
   );
 }
 
+GradientText.displayName = "GradientText";
 
-export { GradientText }
+export { GradientText };

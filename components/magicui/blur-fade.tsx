@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useRef } from "react";
 import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 
@@ -17,7 +17,7 @@ interface BlurFadeProps {
   blur?: string;
 }
 
-export default function BlurFade({
+function BlurFade({
   children,
   className,
   variant,
@@ -61,3 +61,7 @@ export default function BlurFade({
     </AnimatePresence>
   );
 }
+
+BlurFade.displayName = "BlurFade";
+
+export default BlurFade;

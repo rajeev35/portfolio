@@ -1,5 +1,17 @@
 import { useRef, useEffect } from "react";
 
+type MagnetLinesProps = {
+  rows?: number;
+  columns?: number;
+  containerSize?: string;
+  lineColor?: string;
+  lineWidth?: string;
+  lineHeight?: string;
+  baseAngle?: number;
+  className?: string;
+  style?: React.CSSProperties;
+};
+
 function MagnetLines({
   rows = 9,
   columns = 9,
@@ -9,9 +21,9 @@ function MagnetLines({
   lineHeight = "6vmin",
   baseAngle = -10,
   className = "",
-  style = {}
-}) {
-  const containerRef = useRef(null);
+  style = {},
+}: MagnetLinesProps) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -19,8 +31,8 @@ function MagnetLines({
 
     const items = container.querySelectorAll("span");
 
-    const onPointerMove = (pointer) => {
-      items.forEach((item) => {
+    const onPointerMove = (pointer: { x: number; y: number }) => {
+      items.forEach((item: HTMLElement) => {
         const rect = item.getBoundingClientRect();
         const centerX = rect.x + rect.width / 2;
         const centerY = rect.y + rect.height / 2;
@@ -35,16 +47,21 @@ function MagnetLines({
       });
     };
 
-    window.addEventListener("pointermove", onPointerMove);
+    const handlePointerMove = (e: PointerEvent) => {
+      onPointerMove({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("pointermove", handlePointerMove);
 
     if (items.length) {
       const middleIndex = Math.floor(items.length / 2);
-      const rect = items[middleIndex].getBoundingClientRect();
+      const item = items[middleIndex] as HTMLElement;
+      const rect = item.getBoundingClientRect();
       onPointerMove({ x: rect.x, y: rect.y });
     }
 
     return () => {
-      window.removeEventListener("pointermove", onPointerMove);
+      window.removeEventListener("pointermove", handlePointerMove);
     };
   }, []);
 
@@ -57,9 +74,10 @@ function MagnetLines({
         backgroundColor: lineColor,
         width: lineWidth,
         height: lineHeight,
-        "--rotate": `${baseAngle}deg`,
         transform: "rotate(var(--rotate))",
-        willChange: "transform"
+        willChange: "transform",
+        // @ts-ignore - CSS custom property
+        "--rotate": `${baseAngle}deg`,
       }}
     />
   ));
@@ -73,12 +91,15 @@ function MagnetLines({
         gridTemplateRows: `repeat(${rows}, 1fr)`,
         width: containerSize,
         height: containerSize,
-        ...style
+        ...style,
       }}
     >
       {spans}
     </div>
   );
 }
+
+// Add display name to the component
+MagnetLines.displayName = "MagnetLines";
 
 export { MagnetLines };
