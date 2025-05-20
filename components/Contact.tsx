@@ -24,7 +24,7 @@ const social: SocialLink[] = [
   {
     link: "mailto:rajeevkumarq400@gmail.com",
     image: "/mail.svg",
-    handle: "rajeevkumarq400@gmail.com",
+    handle: "gmail.com",
   },
 ];
 
