@@ -7,26 +7,62 @@ import { motion } from "framer-motion";
 // Image configuration - easily editable
 const images = [
   {
-    path: "/pfp.jpg",
+    path: "/IMG_1847.jpg",
     width: { desktop: 200, mobile: 400 },
     height: { desktop: 200, mobile: 400 },
-    alt: "Apple Park, 2024",
+    alt: "StartUp MahaKumbh, 2025",
     rotation: -5,
   },
   {
-    path: "/pfp2.jpeg",
+    path: "/IMG_1848.jpg",
     width: { desktop: 180, mobile: 300 },
     height: { desktop: 260, mobile: 420 },
-    alt: "Tim Cook (Apple CEO), 2024",
+    alt: "Raasa Karts, 2025",
     rotation: 3,
   },
   {
-    path: "/pfp3.jpeg",
+    path: "/IMG_1849.jpg",
     width: { desktop: 180, mobile: 300 },
     height: { desktop: 260, mobile: 420 },
-    alt: "MKBHD (YouTuber), 2024",
+    alt: "Setup, 2024",
     rotation: -2,
   },
+  {
+    path: "/IMG_1850.jpg",
+    width: { desktop: 180, mobile: 300 },
+    height: { desktop: 260, mobile: 420 },
+    alt: "Nap Tap Go, 2024",
+    rotation: 2,
+  },
+  {
+    path: "/IMG_1851.jpg",
+    width: { desktop: 180, mobile: 300 },
+    height: { desktop: 260, mobile: 420 },
+    alt: "GDSC WOW, 2023",
+    rotation: -4,
+  },
+  {
+    path: "/IMG_1852.jpg",
+    width: { desktop: 180, mobile: 300 },
+    height: { desktop: 260, mobile: 420 },
+    alt: "GDSC WOW, 2023",
+    rotation: 1,
+  },
+  {
+    path: "/IMG_1853.jpg",
+    width: { desktop: 180, mobile: 300 },
+    height: { desktop: 260, mobile: 420 },
+    alt: "Meet ryan swift",
+    rotation: -3,
+  },
+  {
+    path: "/IMG_1854.jpg",
+    width: { desktop: 180, mobile: 300 },
+    height: { desktop: 260, mobile: 420 },
+    alt: "Geek for Geeks",
+    rotation: 4,
+  },
+
 ];
 
 export default function Header() {
@@ -46,12 +82,12 @@ export default function Header() {
       <div>
         <BlurFade delay={0.25}>
           <h1 className="text-left md:text-5xl text-3xl">
-            hey! i&apos;m shaurya.
+            hey! i&apos;m rajeev.
           </h1>
         </BlurFade>
         <BlurFade delay={0.5}>
           <h1 className="text-left md:text-3xl text-md text-gray-400">
-            a 14 y/o programmer who likes to build things.
+            a software engineer who likes to build things.
           </h1>
         </BlurFade>
       </div>

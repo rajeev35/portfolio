@@ -49,7 +49,7 @@ export default function RootLayout({
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@madebyshaurya" />
+        <meta name="twitter:site" content="@35_rajeev" />
         <meta
           name="twitter:title"
           content="Rajeev Kumar — Software Engineer, React Native Developer, and tech enthusiast."
