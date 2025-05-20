@@ -21,6 +21,13 @@ const images = [
     rotation: 3,
   },
   {
+    path: "/IMG_1858.jpg",
+    width: { desktop: 180, mobile: 300 },
+    height: { desktop: 260, mobile: 420 },
+    alt: "Microsoft, 2025",
+    rotation: -4,
+  },
+  {
     path: "/IMG_1849.jpg",
     width: { desktop: 180, mobile: 300 },
     height: { desktop: 260, mobile: 420 },
