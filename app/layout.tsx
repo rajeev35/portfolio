@@ -3,9 +3,9 @@ import "./globals.css";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Shaurya Gupta",
+  title: "Rajeev Kumar",
   description:
-    "A 13-year-old Swift developer, web developer, and middle school student. Winner of the 2024 Swift Student Challenge. Passionate about coding, learning, and building projects.",
+    "Rajeev Kumar — Software Engineer, React Native Developer, and tech enthusiast. Passionate about building impactful mobile apps, exploring blockchain, and solving real-world problems with code.",
 };
 
 export default function RootLayout({
@@ -18,27 +18,29 @@ export default function RootLayout({
       <Head>
         <meta
           name="description"
-          content="Shaurya Gupta, a 13-year-old Swift developer, web developer, and middle school student. Winner of the 2024 Swift Student Challenge. Passionate about coding, learning, and building impactful projects."
+          content="Rajeev Kumar — Software Engineer, React Native Developer, and tech enthusiast. Passionate about building impactful mobile apps, exploring blockchain, and solving real-world problems with code."
         />
         <meta
           name="keywords"
-          content="Shaurya Gupta, Swift developer, web development, middle school student, Swift Student Challenge winner, buildspace, teenage programmer"
+          content="Rajeev Kumar — Software Engineer, React Native Developer, and tech enthusiast. Passionate about building impactful mobile apps, exploring blockchain, and solving real-world problems with code.
+
+"
         />
         <meta name="robots" content="all" />
-        <meta name="author" content="Shaurya Gupta" />
+        <meta name="author" content="Rajeev Kumar" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#ffffff" />
 
         {/* Open Graph Meta Tags for Social Media */}
         <meta
           property="og:title"
-          content="Shaurya Gupta - Swift Developer | Web Developer | Student"
+          content="Rajeev Kumar - Software Engineer | React Native Developer | tech enthusiast."
         />
         <meta
           property="og:description"
-          content="13-year-old Swift and web developer. Winner of the 2024 Swift Student Challenge."
+          content="Rajeev Kumar — Software Engineer, React Native Developer, and tech enthusiast."
         />
-        <meta property="og:url" content="https://shauryag.com" />
+        <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -54,7 +56,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:description"
-          content="13-year-old Swift and web developer. Winner of the 2024 Swift Student Challenge."
+          content="Rajeev Kumar — Software Engineer, React Native Developer, and tech enthusiast."
         />
         <meta
           name="twitter:image"
