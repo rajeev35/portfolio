@@ -52,7 +52,7 @@ export default function RootLayout({
         <meta name="twitter:site" content="@madebyshaurya" />
         <meta
           name="twitter:title"
-          content="Shaurya Gupta - Swift Developer | Web Developer | Student"
+          content="Rajeev Kumar — Software Engineer, React Native Developer, and tech enthusiast."
         />
         <meta
           name="twitter:description"
