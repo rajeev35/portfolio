@@ -14,17 +14,17 @@ interface SocialLink {
 
 const social: SocialLink[] = [
   {
-    link: "https://x.com/madebyshaurya",
+    link: "https://x.com/35_rajeev",
     image: "/x.svg",
   },
   {
-    link: "https://github.com/madebyshaurya",
+    link: "https://github.com/rajeev35",
     image: "/gh.png",
   },
   {
-    link: "mailto:shaurya50211@gmail.com",
+    link: "mailto:rajeevkumarq400@gmail.com",
     image: "/mail.svg",
-    handle: "shaurya50211@gmail.com",
+    handle: "rajeevkumarq400@gmail.com",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function Contact() {
                       : "translate-y-0 opacity-100"
                   }`}
                 >
-                  {e.handle ? e.handle : "@madebyshaurya"}
+                  {e.handle ? e.handle : "@rajeev35"}
                 </h1>
                 <div
                   className={`absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out transform ${
