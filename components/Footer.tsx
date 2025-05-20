@@ -6,7 +6,7 @@ export default function Footer() {
     <h1 className="text-center pt-20 text-gray-400">
       If you&apos;re interested in the code,{" "}
       <Link
-        href="https://github.com/madebyshaurya/Portfolio"
+        href="https://github.com/rajeev35/portfolio"
         className="underline transition-all hover:text-blue-500 group"
         target="_blank"
       >
