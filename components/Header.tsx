@@ -59,7 +59,7 @@ const images = [
     path: "/IMG_1854.jpg",
     width: { desktop: 180, mobile: 300 },
     height: { desktop: 260, mobile: 420 },
-    alt: "Geek for Geeks",
+    alt: "Geeks for Geeks",
     rotation: 4,
   },
 

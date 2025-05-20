@@ -18,12 +18,12 @@ export default function Projects() {
         <BlurFade delay={0.25} inView>
           <ProjectCard
             tags={[
-              "saas",
-              "tailwind",
-              "nextjs",
+              "Php",
+              "Laravel",
+              "Sql",
               "firebase",
-              "stripe",
-              "open ai",
+              "React Native",
+              "AWS",
             ]}
             tagColors={{
               tailwind: "#0CA5E9",
@@ -32,11 +32,10 @@ export default function Projects() {
               stripe: "#635BFF",
               "open ai": "#23AB86",
             }}
-            imageSrc="/aceit.jpeg"
-            liveLink="https://aceit.works/"
-            video="https://x.com/madebyshaurya/status/1817938195096510837"
-            title="Ace It"
-            description="ace it turns your notes into study material using ai. this project was made during buildspace s5."
+            imageSrc="/raasa.jpeg"
+            liveLink="https://raasakarts.com/"
+            title="Raasa Karts"
+            description="Raasa Karts is an Indian startup that brings street food vendors onto a digital platform."
           />
         </BlurFade>
         <BlurFade delay={0.5} inView>
