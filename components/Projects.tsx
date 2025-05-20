@@ -26,11 +26,12 @@ export default function Projects() {
               "AWS",
             ]}
             tagColors={{
-              tailwind: "#0CA5E9",
-              nextjs: "#000000",
+              Php: "#0CA5E9",
+              Laravel: "#000000",
               firebase: "#FFC403",
-              stripe: "#635BFF",
-              "open ai": "#23AB86",
+              Sql: "#635BFF",
+              "React Native": "#23AB86",
+              AWS: "#635BFF",
             }}
             imageSrc="/raasa.jpeg"
             liveLink="https://raasakarts.com/"
@@ -40,15 +41,22 @@ export default function Projects() {
         </BlurFade>
         <BlurFade delay={0.5} inView>
           <ProjectCard
-            tags={["swift"]}
+            tags={["Smart Contract",
+              "Solidity",
+              "Next js",
+              "Hardhat"
+            ]}
             tagColors={{
-              swift: "#FA7343",
+              Solidity: "#FA7343",
+              "Next js": "#0CA5E9",
+              Hardhat: "#23AB86",
+              "Smart Contract": "#635BFF",
             }}
-            imageSrc="/fizzix.png"
-            githubLink="https://github.com/madebyshaurya/FizzixApp"
-            video="https://youtu.be/xjSNIMTSfcA?si=H034mcxzXIqr2pvT"
-            title="Fizzix"
-            description="fizzix helps you learn the 3 laws of motion by isaac newton in an interactive way. this was also the swift student challenge '24 winner."
+            imageSrc="/block.jpeg"
+            githubLink="https://github.com/rajeev35/Product-Tracking-Supply-chain--Blockchain"
+            
+            title="Float UI"
+            description="A Blockchan based Product tracking supply chain system. which is increase the efficiency of the supply chain."
           />
         </BlurFade>
       </div>
