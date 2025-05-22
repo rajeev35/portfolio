@@ -52,7 +52,7 @@ const Description = () => {
           </a>
           .
          
-          Currently, I’m exploring how technology can transform industries and
+          Currently, I&apos;m exploring how technology can transform industries and
           improve systems. I believe in the power of collaboration and am always
           looking for opportunities to connect with fellow professionals to
           learn and grow together.
