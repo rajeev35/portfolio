@@ -9,7 +9,7 @@ const Description = () => {
     <div className="pt-10 lowercase text-sm md:text-base">
       <BlurFade delay={1}>
         <p>
-          Hi, I'm Rajeev Kumar, currently working as a Software Engineer at{" "}
+          Hi, I&apos;m Rajeev Kumar, currently working as a Software Engineer at{" "}
           <a
             href="https://www.raasakarts.com"
             className="underline transition-all hover:text-blue-500 group"
@@ -52,7 +52,7 @@ const Description = () => {
           </a>
           .
          
-          Currently, I’m exploring how technology can transform industries and
+          Currently, I&apos;m exploring how technology can transform industries and
           improve systems. I believe in the power of collaboration and am always
           looking for opportunities to connect with fellow professionals to
           learn and grow together.
