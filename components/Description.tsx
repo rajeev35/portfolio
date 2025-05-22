@@ -9,7 +9,7 @@ const Description = () => {
     <div className="pt-10 lowercase text-sm md:text-base">
       <BlurFade delay={1}>
         <p>
-          Hi, I'm Rajeev Kumar, currently working as a Software Engineer at{" "}
+          Hi, I&apos;m Rajeev Kumar, currently working as a Software Engineer at{" "}
           <a
             href="https://www.raasakarts.com"
             className="underline transition-all hover:text-blue-500 group"
